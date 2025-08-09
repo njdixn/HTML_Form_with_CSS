@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Nikole Dixon">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Results</title>
+
+</head>
+
+<body class="form-page">
+    <form action="results.html" method="get">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div class="form-grid">
+                <div>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" required>
+                </div>
+
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+
+                <div>
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div>
+                    <label for="birthdate">Birth Date</label>
+                    <input type="date" id="birthdate" name="birthdate">
+                </div>
+
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div>
+                    <label for="website">Website</label>
+                    <input type="url" id="website" name="website">
+                </div>
+
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Favorites</legend>
+            <div class="form-grid">
+                <div>
+                    <label>Favorite Season</label>
+                    <div class="radio-group">
+                        <p><input type="radio" name="season" value="Winter"> Winter</p>
+                        <p><input type="radio" name="season" value="Summer"> Summer</p>
+
+                    <label>Night or Day</label>
+                        <p><input type="radio" name="night" value="Night"> Night</p>
+                        <p><input type="radio" name="day" value="Day"> Day</p>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="weekday">Favorite Weekday</label>
+                    <select id="weekday" name="weekday" size="7">
+                        <option>Monday</option>
+                        <option>Tuesday</option>
+                        <option>Wednesday</option>
+                        <option>Thursday</option>
+                        <option>Friday</option>
+                        <option>Saturday</option>
+                        <option>Sunday</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="favecolor">Favorite Color</label>
+                    <input type="color" name="favecolor" id="favecolor">
+                </div>
+
+                <input type="hidden" name="sessionId" id="sessionId" value="secretRandomNumberUsedtoManageTheSession">
+
+                <div>
+                    <label for="comments">Tell us what you think</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                </div>
+
+            </div>
+        </fieldset>
+
+        <div class="button-row">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+    <div class="file-row">
+        <form action="results.html" method="GET" enctype="multipart/form-data">
+            <input type="file" name="fileUpload" id="fileUpload">
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Nikole Dixon">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h1>Your Results</h1>
+    <div id="results"></div>
+    <a href="index.html">Back to Form</a>
+
+    <script>
+        const resultsList = document.getElementById('results');
+        new URLSearchParams(window.location.search).forEach((name, password) => {
+            resultsList.append(` ${name}: ${password}`);
+            resultsList.append(document.createElement('br'));
+        });
+    </script>
+</body>
+</html>
+
